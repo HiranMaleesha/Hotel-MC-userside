@@ -1,13 +1,146 @@
-body {
+/* General Styles */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Wrapper */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background-color: #1f6f8b;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+header p {
+  font-size: 1.1rem;
+  margin-top: 5px;
+  color: #eeeeee;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.search-bar input {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #1f6f8b;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.search-bar button {
+  padding: 10px;
+  border: none;
+  background-color: #1f6f8b;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0 8px 8px 0;
+}
+
+.search-bar button:hover {
+  background-color: #1ca3a3;
+}
+
+/* Hall Cards */
+.hall-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.hall-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 20px 10px;
+  width: 30%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hall-card:hover {
+  transform: translateY(-10px);
+}
+
+.hall-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.hall-info {
+  padding: 20px;
+}
+
+.hall-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #1f6f8b;
+}
+
+.hall-info p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.hall-info .price {
+  font-weight: bold;
+  color: #e85d04;
+}
+
+/* Buttons */
+button.book-btn {
+  display: block;
+  width: 100%;
+  background-color: #e85d04;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+button.book-btn:hover {
+  background-color: #d84315;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #1f6f8b;
+  color: white;
+  padding: 15px 0;
+  margin-top: 50px;
+  font-size: 0.9rem;
 }
